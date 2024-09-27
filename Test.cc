@@ -95,11 +95,50 @@ int main()
 }
 */
 // 冒泡排序算法
+/*#include <iostream>
+using namespace std;
+#define PARAM 128
+const short param = 128;
+namespace A
+{
+    int a = 10;
+    int b = 20;
+    void fun(void);
+}
+void func(short a)
+{
+    cout << "short!" << endl;
+}
+void func(int a)
+{
+    cout << "int" << endl;
+}
+void A::fun(void)
+{
+    const int array = 10;
+    int array_a[array] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+}
+void test(void)
+{
+    cout << "PARAM的func函数调用" << endl;
+    func(PARAM); // 触发int
+    cout << "PARAM的func函数调用" << endl;
+
+    cout << "const short的func函数调用" << endl;
+    func(param); // 触发short
+    cout << "const short 的func函数调用" << endl;
+}
+int main()
+{
+    test();
+    system("pause");
+    return 0;
+}*/
 #include <iostream>
 using namespace std;
 int main()
 {
-
+    cout << "Hello World!" << endl;
     system("pause");
     return 0;
 }
